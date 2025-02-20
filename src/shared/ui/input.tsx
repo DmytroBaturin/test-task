@@ -10,6 +10,7 @@ export interface InputProps
   icon?: React.ReactNode;
   widthMain?: string;
   wrapped?: boolean;
+  actionClassName?: string;
   bgColor?: string;
 }
 
@@ -25,6 +26,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       action,
       label,
       bgColor,
+      actionClassName,
       ...props
     },
     ref,
@@ -54,6 +56,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
             <div
               className={cn(
                 "right-0 flex justify-end py-[4px] px-[4px]",
+                actionClassName,
                 !wrapped ? "absolute" : "w-full",
               )}
             >

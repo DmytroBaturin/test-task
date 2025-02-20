@@ -32,6 +32,7 @@ export const AboutScreen = () => {
           <Input
             wrapped
             widthMain="w-full max-w-[500px]"
+            actionClassName="md:px-[4px] px-0"
             bgColor="md:bg-[#4A3BB3] bg-transparent"
             className="h-[60px] text-white bg-[#4A3BB3]"
             action={
