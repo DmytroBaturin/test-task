@@ -34,7 +34,7 @@ export const PastTransactionsScreen = () => {
           </div>
           <div className="  mb-7 h-fit bg-white">
             <ScrollBar
-              className="absolute lg:w-full w-[90%] max-w-[900px] transform bg-white/10"
+              className="absolute  [&>div]:!bg-[#6073A1] lg:w-full w-[90%] max-w-[900px] transform bg-white/10"
               orientation="horizontal"
             />
           </div>

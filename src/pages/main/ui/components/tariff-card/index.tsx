@@ -44,7 +44,27 @@ const TariffCard = ({
             className="border-b px-[16px] md:px-[24px] border-dotted border-white/10 py-2"
             key={i}
           >
-            <WithIcon icon={<p>1</p>}>{feature}</WithIcon>
+            <WithIcon
+              icon={
+                <svg
+                  width="11"
+                  height="10"
+                  viewBox="0 0 11 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 5.5625L4.71231 9.27481L9.96232 1.39982"
+                    stroke="white"
+                    stroke-width="1.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              }
+            >
+              {feature}
+            </WithIcon>
           </li>
         ))}
       </ul>
