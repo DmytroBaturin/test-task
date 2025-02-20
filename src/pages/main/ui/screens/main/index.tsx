@@ -9,7 +9,7 @@ export const MainScreen = () => {
       <PageLayout
         id={routes.main.link}
         as="main"
-        classname="h-dvh flex justify-between items-center max-h-[768px]"
+        classname="h-dvh flex justify-between items-center  max-h-[768px]"
       >
         <section className="flex gap-2  lg:flex-nowrap flex-wrap-reverse justify-center lg:justify-between w-full items-start ">
           <div className="flex gap-6 flex-col max-w-[630px]">

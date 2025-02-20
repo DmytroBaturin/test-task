@@ -17,9 +17,9 @@ export const Tariffs = () => {
       border
       id={routes.tariffs.link}
       as="section"
-      classname="max-w-[876px] min-h-[940px] h-full  md:mb-[0px] mb-[44px] justify-center flex items-center"
+      classname="max-w-[876px]  h-full  md:mb-[0px] mb-[44px] justify-center flex items-center"
     >
-      <div className="w-full items-center flex md:mt-0 mt-[56px] gap-[24px] md:gap-[40px] flex-col">
+      <div className="w-full items-center flex md:my-[96px] mb-[44px] mt-[56px] gap-[24px] md:gap-[40px] flex-col">
         <h1 className="uppercase w-full font-bold md:text-[44px] text-[28px] leading-tight">
           Тарифы
         </h1>

@@ -11,7 +11,7 @@ export const AboutScreen = () => {
       classname="bg-white text-black flex min-h-[437px] md:min-h-[424px] md:items-center"
       isSvg
     >
-      <div className="flex z-50 items-center relative md:flex-row md:py-[0px] py-[24px] flex-col justify-between w-full">
+      <div className="flex items-center relative md:flex-row md:py-[0px] py-[24px] flex-col justify-between w-full">
         <div className="flex flex-col gap-[40px] max-w-[413px]">
           <h1 className="text-[28px] md:text-[44px] font-bold uppercase">
             О компании
@@ -25,7 +25,7 @@ export const AboutScreen = () => {
             запись Binance через платформу TradeBlade всего в 1 клик.
           </p>
         </div>
-        <div className="max-w-[630px] md:static absolute -bottom-[125px] w-full h-[236px] gap-[20px] gap-8 px-2 flex flex-col items-center justify-center rounded-[4px] bg-primary">
+        <div className="max-w-[630px]  z-10 md:static absolute -bottom-[125px] w-full h-[236px] gap-[20px] gap-8 px-2 flex flex-col items-center justify-center rounded-[4px] bg-primary">
           <p className="text-white tracking-[-1.12px] text-center font-medium text-[20px] md:text-[28px] max-w-[500px]">
             Попробуйте сейчас и получите 5 дней бесплатного пользования
           </p>
