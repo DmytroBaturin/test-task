@@ -25,16 +25,16 @@ export const PastTransactionsScreen = () => {
 
         <ScrollArea
           type="always"
-          className="flex  items-center w-full justify-center flex-col gap-3"
+          className="flex items-center w-screen justify-center flex-col gap-3"
         >
           <div className="flex gap-5">
             {cards.map((card, i) => (
               <Card key={i} {...card} />
             ))}
           </div>
-          <div className="max-w-[900px] mb-7 h-fit bg-white">
+          <div className="  mb-7 h-fit bg-white">
             <ScrollBar
-              className="left-1/2 px-[20px] max-w-[900px] absolute bg-white/10"
+              className="absolute lg:w-full w-[90%] max-w-[900px] transform bg-white/10"
               orientation="horizontal"
             />
           </div>
