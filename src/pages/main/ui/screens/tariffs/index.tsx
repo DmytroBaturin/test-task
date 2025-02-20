@@ -1,5 +1,9 @@
 import TariffCard from "@/pages/main/ui/components/tariff-card";
-import { tariffs } from "@/pages/main/ui/screens/tariffs/tariffs";
+import {
+  ITariffs,
+  Tariff,
+  tariffs,
+} from "@/pages/main/ui/screens/tariffs/tariffs";
 import { routes } from "@/shared/config/routes";
 import { PageLayout } from "@/shared/layout/page";
 
@@ -34,13 +38,15 @@ export const Tariffs = () => {
           {tariffKeys.map((key) => (
             <TabsContent key={key} value={key}>
               <div className="flex md:flex-row flex-col gap-[20px]">
-                {tariffs[key].map((tariff, index) => (
-                  <TariffCard
-                    isPrimary={tariff.title === "STANDART"}
-                    key={index}
-                    {...tariff}
-                  />
-                ))}
+                {tariffs[key as keyof ITariffs].map(
+                  (tariff: Tariff, index: number) => (
+                    <TariffCard
+                      isPrimary={tariff.title === "STANDART"}
+                      key={index}
+                      {...tariff}
+                    />
+                  ),
+                )}
               </div>
             </TabsContent>
           ))}

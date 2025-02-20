@@ -1,13 +1,16 @@
 import { Comment } from "@/pages/main/ui/components/comments";
-import { feedbacks } from "@/pages/main/ui/screens/feedback/feedbacks";
+import {
+  Feedback,
+  feedbacks,
+} from "@/pages/main/ui/screens/feedback/feedbacks";
 import { routes } from "@/shared/config/routes";
 import { PageLayout } from "@/shared/layout/page";
 import { Button } from "@/shared/ui/button";
 
-const FeedbackGroup = ({ feedbacks }) => {
+const FeedbackGroup = ({ feedbacks }: { feedbacks: Feedback[] }) => {
   return (
     <div className="flex flex-col gap-[20px]">
-      {feedbacks.map((feedback, index) => (
+      {feedbacks.map((feedback: Feedback, index: number) => (
         <div key={index} className="flex flex-col">
           <Comment {...feedback} />
         </div>

@@ -1,4 +1,10 @@
-export const feedbacks = [
+export interface Feedback {
+  username: string;
+  status: string;
+  text: string;
+}
+
+export const feedbacks: Feedback[] = [
   {
     username: "@ArtemGuriev",
     status: "Общая прибыль 3043.27 USDT.",
