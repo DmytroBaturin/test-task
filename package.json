@@ -1,0 +1,39 @@
+{
+  "name": "test-task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "del": "^8.0.0",
+    "gulp": "^5.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-inject": "^5.0.5",
+    "gulp-plumber": "^1.2.1",
+    "gulp-prettier": "^6.0.0",
+    "gulp-rename": "^2.1.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-sass": "^6.0.1",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
+    "prettier": "^3.6.2",
+    "sass": "^1.89.2"
+  },
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{js,scss,html}\"",
+    "lint": "prettier --check \"src/**/*.{js,scss,html}\"",
+    "dev": "gulp",
+    "build": "gulp build"
+  },
+  "keywords": [],
+  "author": "Dmytro Baturin",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "gulp-if": "^3.0.0",
+    "gulp-noop": "^1.0.1",
+    "normalize.css": "^8.0.1"
+  }
+}
