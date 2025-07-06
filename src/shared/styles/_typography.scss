@@ -1,0 +1,91 @@
+@use './base/variables' as *;
+
+@use './base/mixins' as mixins;
+
+.font{
+  &--regular{
+    font-weight: 400;
+  }
+  &--light {
+    font-weight: 300;
+  }
+  &--medium {
+    font-weight: 600;
+  }
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--exo {
+    font-family: "Exo", sans-serif;
+  }
+}
+
+.text {
+
+  &--primary { color: $text-color;   line-height: 150%; }
+  &--description { color: $description-color;   line-height: 150%; }
+
+  @keyframes underlineIn {
+    from {
+      width: 0;
+    }
+    to {
+      width: 102%;
+    }
+  }
+
+  &--underline {
+    position: relative;
+    display: inline-block;
+    &::before {
+      position: absolute;
+      z-index: -1;
+      bottom: 8px;
+      left: 0;
+      width: 0;
+      height: 12px;
+      border-radius: 200px;
+      background: $secondary-color;
+      content: '';
+      animation: underlineIn 0.5s ease-out forwards;
+    }
+  }
+
+
+  &--capitalize {
+    text-transform: capitalize;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--outline {
+    color: transparent;
+    -webkit-text-stroke: 2px #000000;
+  }
+
+  &--sm {
+    font-size: 16px;
+    @media (max-width: $screen-md) {
+      font-size: 14px;
+    }
+  }
+
+  &--md {
+    font-size: 16px;
+  }
+
+  &--xl {
+    font-size: 24px;
+  }
+
+  &--lg {
+    line-height: 140%;
+    font-size: 44px;
+    @media (max-width: $screen-md) {
+      font-size: 28px;
+    }
+  }
+}

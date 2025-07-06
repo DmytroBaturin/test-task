@@ -1,0 +1,18 @@
+.marquee {
+  display: flex;
+  gap: 32px;
+  overflow: hidden;
+
+  span {
+    color: white;
+    white-space: nowrap;
+    display: inline-block;
+  }
+}
+
+.marquee .outlined {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  text-stroke: 1px white;
+}
+

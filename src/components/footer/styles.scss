@@ -1,0 +1,59 @@
+@use "../../shared/styles/base/variables" as *;
+
+
+.footer{
+  margin: auto;
+  display: flex;
+  padding: 64px 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 28px;
+}
+.footer__logo__img{
+  @media (max-width: $screen-md)  {
+    max-width: 144.5px;
+  }
+}
+
+.footer__container{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.footer__nav-list{
+  display: flex;
+  align-items: center;
+  gap: 46px;
+  @media (max-width: $screen-md)  {
+    margin-top: 12px;
+    gap: 28px;
+    flex-direction: column;
+  }
+}
+
+.footer__links{
+  ul{
+    gap: 24px;
+    display: flex;
+    li{
+       background-color: $primary-color;
+    }
+  }
+  @media (max-width: $screen-md)  {
+    margin-top: 12px;
+  }
+}
+
+.footer__contacts{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-direction: column;
+  @media (max-width: $screen-md)  {
+      gap: 8px
+  }
+}

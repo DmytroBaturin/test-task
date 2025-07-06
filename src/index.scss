@@ -1,0 +1,17 @@
+@use 'shared/styles/base/variables' as *;
+@use 'shared/styles/base/resets' as *;
+@use 'shared/styles/layout' as *;
+@use "shared/styles/typography" as *;
+@use "shared/styles/button" as *;
+@use "shared/styles/marquee" as *;
+
+
+ul, ol {
+  list-style: none;
+}
+
+body{
+  font-size: inherit;
+  background: $bg-color;
+  font-family: "Open Sans", sans-serif;
+}
