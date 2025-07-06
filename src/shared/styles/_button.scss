@@ -12,7 +12,6 @@
   background: $primary-color;
   transition: 0.2s background ease-in-out;
   &__icon {
-
     &--small {
       @extend .button;
       cursor: pointer;
@@ -44,7 +43,6 @@
     }
   }
 }
-
 
 /*  Ripple */
 .ripple {

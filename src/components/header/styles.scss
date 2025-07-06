@@ -1,36 +1,35 @@
-@use "../../shared/styles/base/variables" as *;
+@use '../../shared/styles/base/variables' as *;
 
-.header{
+.header {
   padding: 24px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.header__content{
+.header__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   @media (max-width: $screen-md) {
-    img{
+    img {
       max-width: 145.5px;
     }
   }
-
 }
 
-.header__nav{
+.header__nav {
   display: flex;
   width: 100%;
   margin: auto;
   justify-content: center;
 }
 
-.header__logo{
-
+.header__logo {
 }
 
-.header__nav-list{
+.header__nav-list {
+  position: relative;
   gap: 46px;
   display: flex;
   list-style: none;
@@ -41,22 +40,26 @@
   }
 }
 
-.header__nav-link--active{
+.header__nav-link--active {
   position: relative;
   color: $secondary-color;
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    height: 1px;
-    width: 100%;
-    background-color: $secondary-color;
-  }
+}
+
+.header__nav-wrapper {
+  position: relative;
 }
 
 
-.header__nav-item {
-  position: relative;
-
+.header__active-line {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  background: $secondary-color;
+  width: 0;
+  transform: translateX(0);
+  transition: transform 0.3s ease, width 0.3s ease;
+  @media (max-width: $screen-lg) {
+    bottom: 16px;
+  }
 }

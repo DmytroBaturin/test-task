@@ -1,6 +1,6 @@
-@use "../../shared/styles/base/variables" as *;
+@use '../../shared/styles/base/variables' as *;
 
-.services-page__hero__text{
+.services-page__hero__text {
   max-width: 558px;
   display: flex;
   flex-direction: column;
@@ -10,14 +10,14 @@
     margin-top: 32px;
   }
 }
-.services-page__hero{
+.services-page__hero {
   width: 100%;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
 }
 
-.services-page__hero__content{
+.services-page__hero__content {
   padding: 42px 0;
   margin: auto;
   flex-wrap: wrap;
@@ -32,10 +32,9 @@
     gap: 0;
     justify-content: center;
   }
-
 }
-.services-page__hero__image{
-  img{
+.services-page__hero__image {
+  img {
     max-width: 461px;
     width: 100%;
     @media (max-width: $screen-md) {
@@ -44,14 +43,14 @@
   }
 }
 
-.services-page{
+.services-page {
   padding-top: 46px;
   @media (max-width: $screen-md) {
     padding-top: 0;
   }
 }
 
-.services-page__hero-section__content{
+.services-page__hero-section__content {
   margin-top: 36px;
   overflow-x: clip;
   width: 100%;
@@ -66,7 +65,7 @@
   }
 }
 
-.services-page__hero__slide__wrapper{
+.services-page__hero__slide__wrapper {
   width: 110%;
   position: absolute;
   height: 61px;
@@ -81,7 +80,7 @@
   }
 }
 
-.services-page__hero__slide__wrapper-2{
+.services-page__hero__slide__wrapper-2 {
   height: 61px;
   width: 110%;
   position: absolute;
@@ -94,7 +93,6 @@
     rotate: 8deg;
   }
 }
-
 
 .services-page__hero__slide span {
   color: $foreground-color;

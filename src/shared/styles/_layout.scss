@@ -1,6 +1,6 @@
 @use './base/variables' as *;
 
-.page__layout{
+.page__layout {
   max-width: calc($max-width + ($padding * 2));
   padding-right: $padding !important;
   padding-left: $padding !important;

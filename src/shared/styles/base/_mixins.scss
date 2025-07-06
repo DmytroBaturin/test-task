@@ -1,5 +1,6 @@
 @mixin pseudo-element($element) {
-  &:#{$element}, &::#{$element} {
+  &:#{$element},
+  &::#{$element} {
     @content;
   }
 }

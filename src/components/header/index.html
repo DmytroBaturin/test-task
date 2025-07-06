@@ -1,22 +1,30 @@
 <header class="header page__layout">
-    <div class="header__content">
-        <div class="header__logo">
-            <img class="header__logo-img" src="../../assets/logo.svg" alt="">
-        </div>
-        <button class="button text--sm font--bold">Sign Up</button>
+  <div class="header__content">
+    <div class="header__logo">
+      <img class="header__logo-img" src="../../assets/logo.svg" alt="" />
     </div>
+    <button class="button text--sm font--bold">Sign Up</button>
+  </div>
 
     <nav class="header__nav font--medium">
-        <ul class="header__nav-list text--description text--md">
-            <li class="header__nav-item">
-                <a href="#home" class="header__nav-link text--description header__nav-link--active" data-page="home">Home</a>
-            </li>
-            <li class="header__nav-item">
-                <a href="#about" class="header__nav-link text--description" data-page="about">About us</a>
-            </li>
-            <li class="header__nav-item">
-                <a href="#services" class="header__nav-link text--description" data-page="services">Services</a>
-            </li>
-        </ul>
+        <div class="header__nav-wrapper">
+            <ul class="header__nav-list text--description text--md">
+                <li class="header__nav-item">
+                    <a
+                            href="#home"
+                            class="header__nav-link text--description"
+                            data-page="home"
+                    >Home</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#about" class="header__nav-link text--description" data-page="about">About us</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#services" class="header__nav-link text--description" data-page="services">Services</a>
+                </li>
+            </ul>
+            <div class="header__active-line"></div>
+        </div>
     </nav>
+
 </header>

@@ -2,8 +2,8 @@
 
 @use './base/mixins' as mixins;
 
-.font{
-  &--regular{
+.font {
+  &--regular {
     font-weight: 400;
   }
   &--light {
@@ -17,14 +17,19 @@
   }
 
   &--exo {
-    font-family: "Exo", sans-serif;
+    font-family: 'Exo', sans-serif;
   }
 }
 
 .text {
-
-  &--primary { color: $text-color;   line-height: 150%; }
-  &--description { color: $description-color;   line-height: 150%; }
+  &--primary {
+    color: $text-color;
+    line-height: 150%;
+  }
+  &--description {
+    color: $description-color;
+    line-height: 150%;
+  }
 
   @keyframes underlineIn {
     from {
@@ -51,7 +56,6 @@
       animation: underlineIn 0.5s ease-out forwards;
     }
   }
-
 
   &--capitalize {
     text-transform: capitalize;
