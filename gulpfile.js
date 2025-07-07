@@ -96,12 +96,6 @@ function serve() {
   watch(paths.assets.src, assets).on('change', browserSync.reload)
 }
 
-exports.clean = clean
-exports.html = html
-exports.styles = styles
-exports.scripts = scripts
-exports.serve = serve
-
 const build = series(clean, series(scripts, styles, assets, html))
 
 exports.default = series(build, serve)
