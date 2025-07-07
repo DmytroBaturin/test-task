@@ -1,5 +1,5 @@
 ;(function () {
-  function marquee(container, { speed = 60, gap = 24 } = {}) {
+  function marquee(container, { speed = 60, gap = 40 } = {}) {
     const items = Array.from(container.children)
     const wrapper = document.createElement('div')
 
@@ -51,5 +51,5 @@
 })()
 
 window.pageInit = () => {
-  window.initMarquees('.marquee', { speed: 60, gap: 32 })
+  window.initMarquees('.marquee', { speed: 60, gap: 40 })
 }
